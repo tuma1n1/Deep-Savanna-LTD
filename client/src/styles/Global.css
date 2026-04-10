@@ -198,7 +198,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 8%;
+  padding: 0 clamp(16px, 5vw, 60px);
   color: #ffffff;
   overflow: hidden;
 }
@@ -447,7 +447,7 @@ p {
 
 /* Intro */
 .contact-intro {
-  padding: 0px 60px 30px;
+  padding: 0px clamp(16px, 5vw, 60px) 30px;
   text-align: center;
 }
 
@@ -681,7 +681,7 @@ p {
 /* SERVICE CARD LAYOUT */
 
 .service-cards {
-  padding: 40px 60px 60px;
+  padding: 40px clamp(16px, 5vw, 60px) 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
@@ -750,7 +750,7 @@ p {
   inset: 0;
   filter: blur(0.5px);
 
-  background-image: url("/Deep-Savanna-Logo-2-Xbg.png");
+  background-image: url("./Deep-Savanna-Logo-2-Xbg.png");
   background-repeat: repeat;
   background-position: 0 0, 60px 60px;
   background-size: 120px;
@@ -791,9 +791,42 @@ p {
   );
 }
 
-/* Responsive */
-@media (max-width:900px){
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-right {
+    display: none; /* temporary fix */
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:900px){
   .portfolio-floating{
     grid-template-columns: repeat(3,1fr);
     gap: 20px;

@@ -370,7 +370,7 @@ p {
 
 .btn-outline {
   border: 2px solid #ffffff;
-  color: #ffffff;
+  color: #f39a1f;
 }
 
 .btn-outline:hover {
@@ -831,12 +831,12 @@ p {
   inset: 0;
   filter: blur(0.5px);
 
-  background-image: url("./Deep-Savanna-Logo-2-Xbg.png");
+  background-image: url("/Deep-Savanna-Logo-2-Xbg.png");
   background-repeat: repeat;
   background-position: 0 0, 60px 60px;
-  background-size: 120px;
+  background-size: 100px;
 
-  opacity: 0.09; /* 🔑 watermark transparency */
+  opacity: 0.2; /* 🔑 watermark transparency */
 
   z-index: 0;
 }
